@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+
+    <!-- Product Service -->
+    <route url="/V1/sitemetadata" method="GET">
+        <service class="TexanHogman\SiteMetaData\Api\SiteMetaDataManagementInterface" method="getModuleList"/>
+        <resources>
+            <resource ref="TexanHogman_SiteMetaData::modules" />
+        </resources>
+    </route>
+</routes>
