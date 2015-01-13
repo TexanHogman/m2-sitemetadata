@@ -1,0 +1,1 @@
+The extension provides a service contract to retreive some site meta data.
